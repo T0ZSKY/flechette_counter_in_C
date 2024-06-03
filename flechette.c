@@ -26,6 +26,8 @@ void reinitialiserPartie(int scores[], int ordre[], int nombre, int scoreDepart)
 }
 
 int main() {
+    srand(time(NULL)); // Initialisation du générateur de nombres aléatoires
+
     printf("###        ##\n");
     printf(" ##\n");
     printf(" ##       ###      ####    #####    ##  ##    ####    #####    ##  ##    ####\n");
@@ -33,7 +35,7 @@ int main() {
     printf(" ##  ##    ##     ######   ##  ##   ##  ##   ######   ##  ##   ##  ##   ######\n");
     printf(" ##  ##    ##     ##       ##  ##    ####    ##       ##  ##   ##  ##   ##\n");
     printf(" ######    ####     #####   ##  ##     ##      #####   ##  ##    ######   #####\n\n");
-    printf("Lancer une partie (o/n) ? ");
+    printf("Lancer une partie (o/n)? ");
     char choix;
     scanf(" %c", &choix);
     if (choix == 'o') {
